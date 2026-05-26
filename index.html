@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>川渔郎鱼蛙火锅·新港二号路店 · 新店开业全案营销方案</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --red: #6B0E0E;
+  --gold: #CCAA44;
+  --gold-light: #F0B429;
+  --cream: #FDF6EC;
+  --cream2: #F5F2ED;
+  --dark: #1a1a1a;
+  --text: #2c2c2c;
+  --text-light: #6b6b6b;
+  --white: #fff;
+  --shadow: 0 4px 24px rgba(0,0,0,0.08);
+  --radius: 16px;
+}
+
+body {
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, var(--red) 0%, #8B1A1A 40%, #A52A2A 100%);
+  padding: 80px 40px 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 70%, rgba(204,170,68,0.08) 0%, transparent 50%);
+}
+.hero-badge {
+  display: inline-block;
+  background: var(--gold-light);
+  color: var(--red);
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 42px;
+  font-weight: 900;
+  color: var(--gold-light);
+  letter-spacing: 4px;
+  margin-bottom: 8px;
+  position: relative;
+}
+.hero .subtitle {
+  font-size: 20px;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 30px;
+  position: relative;
+}
+.hero-meta {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  position: relative;
+}
+.hero-meta span {
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+}
+.hero-meta strong {
+  color: var(--gold-light);
+  font-weight: 600;
+}
+
+/* ===== NAV ===== */
+.toc {
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 12px 0;
+  overflow-x: auto;
+}
+.toc-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  padding: 0 40px;
+  white-space: nowrap;
+}
+.toc a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+.toc a:hover { color: var(--red); background: rgba(107,14,14,0.06); }
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== SECTION ===== */
+.section {
+  padding: 60px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.section:last-of-type { border-bottom: none; }
+
+.section-number {
+  display: inline-block;
+  width: 36px; height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background: var(--red);
+  color: var(--gold-light);
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: 12px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 8px;
+}
+
+.section-desc {
+  color: var(--text-light);
+  font-size: 14px;
+  margin-bottom: 32px;
+  padding-left: 48px;
+}
+
+/* ===== CARDS ===== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+.card:hover { transform: translateY(-2px); }
+.card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--red);
+  margin-bottom: 8px;
+}
+.card .label {
+  display: inline-block;
+  background: var(--cream);
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.card p, .card li {
+  font-size: 14px;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+.card ul { padding-left: 16px; }
+
+/* ===== HIGHLIGHT ===== */
+.highlight-box {
+  background: linear-gradient(135deg, var(--red), #8B1A1A);
+  color: var(--white);
+  border-radius: var(--radius);
+  padding: 32px 40px;
+  margin: 24px 0;
+}
+.highlight-box h3 {
+  color: var(--gold-light);
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.highlight-box p, .highlight-box li {
+  color: rgba(255,255,255,0.9);
+  font-size: 14px;
+  line-height: 1.9;
+}
+.highlight-box ul { padding-left: 20px; }
+
+/* ===== TIMELINE ===== */
+.timeline {
+  position: relative;
+  padding-left: 32px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--gold), var(--red));
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 28px;
+  padding: 20px 24px;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  top: 24px;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--gold-light);
+  border: 2px solid var(--red);
+}
+.timeline-item .day {
+  font-weight: 700;
+  color: var(--red);
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.timeline-item h4 {
+  font-size: 17px;
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+.timeline-item p {
+  font-size: 14px;
+  color: var(--text-light);
+}
+
+/* ===== TABLE ===== */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 14px;
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.data-table th {
+  background: var(--red);
+  color: var(--gold-light);
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+}
+.data-table td {
+  padding: 10px 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.data-table tr:last-child td { border-bottom: none; }
+.data-table tr:hover { background: var(--cream); }
+
+/* ===== KPI ===== */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+.kpi-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 20px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.kpi-card .num {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--red);
+}
+.kpi-card .num .unit {
+  font-size: 16px;
+  color: var(--text-light);
+}
+.kpi-card .label {
+  font-size: 13px;
+  color: var(--text-light);
+  margin-top: 4px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-light);
+  font-size: 13px;
+}
+
+/* ===== NEW STORE BADGE ===== */
+.new-store-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--gold-light);
+  color: var(--red);
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 28px; }
+  .section-title { font-size: 22px; }
+  .card-grid { grid-template-columns: 1fr; }
+  .hero-meta { gap: 16px; }
+  .highlight-box { padding: 24px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="hero-badge">🔥 全新门店 · 独立运营</div>
+  <h1>川渔郎鱼蛙火锅 · 新港店</h1>
+  <p class="subtitle">新店开业 · 0到1全案营销方案</p>
+  <div class="hero-meta">
+    <span>📍 <strong>新港二号路2250号</strong></span>
+    <span>🏷️ <strong>四川火锅 · 鱼蛙</strong></span>
+    <span>⭐ <strong>暂无星级 → 破局在即</strong></span>
+    <span>📅 <strong>2026年6月</strong></span>
+  </div>
+</header>
+
+<!-- ===== NAV ===== -->
+<nav class="toc">
+  <div class="toc-inner">
+    <a href="#bg">01 背景诊断</a>
+    <a href="#strategy">02 核心策略</a>
+    <a href="#plan">03 开业引爆计划</a>
+    <a href="#dm">04 团购矩阵</a>
+    <a href="#promotion">05 推广通</a>
+    <a href="#private">06 私域沉淀</a>
+    <a href="#members">07 会员体系</a>
+    <a href="#budget">08 预算分配</a>
+    <a href="#kpi">09 KPI目标</a>
+    <a href="#qa">10 合规·话术</a>
+    <a href="#summary">11 总结</a>
+  </div>
+</nav>
+
+<!-- ===== 01 背景诊断 ===== -->
+<div class="container" id="bg">
+<div class="section">
+  <div class="section-title"><span class="section-number">01</span>背景诊断</div>
+  <div class="section-desc">搞清楚起点，才能找到最短路径</div>
+
+  <div class="card-grid">
+    <div class="card">
+      <span class="label">🏪 店铺画像</span>
+      <h3>川渔郎鱼蛙火锅 · 新港二号路店</h3>
+      <p>
+        · 位置：新港街道自贸试验区新港二号路2250号<br>
+        · 商圈：成熟居民区+办公区，塘沽老核心<br>
+        · 品类：四川火锅 / 鱼蛙特色火锅<br>
+        · 状态：<strong>全新店，暂无星级，评价数0</strong>
+      </p>
+    </div>
+    <div class="card">
+      <span class="label">🔗 门店关系</span>
+      <h3>独立运营 · 与泰达店无关</h3>
+      <p>
+        · 老板朋友加盟开店，财务/管理独立<br>
+        · ❌ 不能从泰达店导老客<br>
+        · ❌ 没有美团收银老店数据<br>
+        · ❌ 无评价基础/星级基础<br>
+        · ✅ 品牌有认知度（川渔郎三个字自带流量）
+      </p>
+    </div>
+    <div class="card">
+      <span class="label">🎯 核心挑战</span>
+      <h3>从0到1破局</h3>
+      <p>
+        · 无评价 → 无转化 → 无流量 → 恶性循环<br>
+        · 新港商圈火锅竞争堆量<br>
+        · 需要快速建立"可信任感"<br>
+        · 开业第一波的爆发力决定后续节奏
+      </p>
+    </div>
+  </div>
+
+  <div class="highlight-box" style="margin-top: 20px;">
+    <h3>💡 破局核心逻辑</h3>
+    <p>
+      <strong>新店破局 = 团购引爆破冰 → 推广通精准获客 → 达人探店背书 → 评价积累成星 → 私域留住老客 → 会员复购稳定 </strong><br><br>
+      第一阶段目标：<strong>首月冲上4.5星，积累500+条评价</strong>，让"新客敢来、来过还来"
+    </p>
+  </div>
+</div>
+</div>
+
+<!-- ===== 02 核心策略 ===== -->
+<div class="container" id="strategy">
+<div class="section">
+  <div class="section-title"><span class="section-number">02</span>核心策略 · 五步破冰法</div>
+  <div class="section-desc">没有老客，就靠新客；没有口碑，就用产品和活动打造口碑</div>
+
+  <div class="card-grid">
+    <div class="card">
+      <h3>🔥 第一步：开业即引爆</h3>
+      <span class="label">D-7 ~ D+7</span>
+      <p>
+        · 开业前7天预热：朋友圈海报+短视频预热<br>
+        · 开业当天：限时开业特惠套餐引爆排队<br>
+        · 开业3天内：到店收藏打卡送菜品，快速出评价
+      </p>
+    </div>
+    <div class="card">
+      <h3>📱 第二步：大众点评3板斧</h3>
+      <span class="label">D-3 ~ D+30</span>
+      <p>
+        · 低价引流团购（鱼蛙双人餐¥79）冲销量<br>
+        · 推广通精准投放（周边3km+商圈2km）<br>
+        · 达人探店邀请（10-15位Lv4-Lv7达人）
+      </p>
+    </div>
+    <div class="card">
+      <h3>💬 第三步：评价运营</h3>
+      <span class="label">D+1 ~ 持续</span>
+      <p>
+        · 到店顾客100%追评引导<br>
+        · 收藏打卡送甜品/饮品<br>
+        · 差评15分钟内响应+处理<br>
+        · 首月目标500条真实评价
+      </p>
+    </div>
+    <div class="card">
+      <h3>📲 第四步：私域沉淀</h3>
+      <span class="label">D+7 ~ 持续</span>
+      <p>
+        · 收银端设置储值即送金额<br>
+        · 企业微信建群：到店扫码入群享专属福利<br>
+        · 微信群周频运营：限时抢购+新品预告+生日福利
+      </p>
+    </div>
+    <div class="card">
+      <h3>🔄 第五步：复购锁客</h3>
+      <span class="label">D+15 ~ 持续</span>
+      <p>
+        · 开业后推出储值方案<br>
+        · 设定四级会员权益（鱼苗→小鱼→大鱼→鱼王）<br>
+        · 每周低谷时段（周一至周四）专属活动
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== 03 开业引爆计划 ===== -->
+<div class="container" id="plan">
+<div class="section">
+  <div class="section-title"><span class="section-number">03</span>开业引爆 · 倒计时时间轴</div>
+  <div class="section-desc">以正式开业当天为D日，全流程精准把控</div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="day">D-14 ~ D-7</div>
+      <h4>📌 筹备期 &middot; 万事俱备</h4>
+      <p>
+        · 美团/大众点评店铺装修：高清头图+菜品图+环境图（至少20张）<br>
+        · 团购套餐上线：开业引流款+日常锁客款<br>
+        · 推广通账户开通并预充值<br>
+        · 门店物料准备：桌贴、菜单、海报、打卡牌、二维码台卡
+      </p>
+    </div>
+    <div class="timeline-item">
+      <div class="day">D-7 ~ D-3</div>
+      <h4>📣 预热期 &middot; 声量造势</h4>
+      <p>
+        · 朋友圈海报：老板/朋友发朋友圈扩散"新港也有川渔郎了"<br>
+        · 抖音/小红书：发布3-5条短视频（菜品特写+环境展示+位置导航）<br>
+        · 周边地推：新港二号路沿街发传单+开业优惠卡<br>
+        · 推广通预上线：小预算测试点击率，优化图片和文案
+      </p>
+    </div>
+    <div class="timeline-item">
+      <div class="day">D-Day &middot; 开业当天 🔥</div>
+      <h4>🎉 爆发期 &middot; 一炮而红</h4>
+      <p>
+        · <strong>开业特惠：全场鱼蛙火锅享7.8折</strong><br>
+        · 前50位到店顾客赠送<strong>招牌饮品1份</strong><br>
+        · 到店打卡收藏+写评价 → 赠送<strong>现炸酥肉1份</strong><br>
+        · 邀请3-5位达人当天到店体验，当天出评价<br>
+        · 推广通全面开启：抢周边搜索流量
+      </p>
+    </div>
+    <div class="timeline-item">
+      <div class="day">D+1 ~ D+7</div>
+      <h4>⚡ 加速期 &middot; 快速冲星</h4>
+      <p>
+        · 持续达人探店（5-10位）<br>
+        · 每天追踪评价量，差评15分钟内回复<br>
+        · 收藏打卡活动持续：送小吃/饮品/甜品<br>
+        · 微信群扫码入：开业前3天8折券发放
+      </p>
+    </div>
+    <div class="timeline-item">
+      <div class="day">D+8 ~ D+30</div>
+      <h4>📈 稳定期 &middot; 巩固成果</h4>
+      <p>
+        · 推广通转为日常投放模式<br>
+        · 每周发布1-2条视频/图文内容<br>
+        · 建立四级会员体系+储值方案上线<br>
+        · 低谷时段活动启动：工作日午市/晚市特惠
+      </p>
+    </div>
+    <div class="timeline-item">
+      <div class="day">D+31 ~ D+60</div>
+      <h4>🏆 冲刺期 &middot; 锁定商圈地位</h4>
+      <p>
+        · 目标评价数破800+，星级稳定4.5+<br>
+        · 商圈热门榜/好评榜冲刺<br>
+        · 老客复购率监控&优化<br>
+        · 总结首月数据，调整团购和推广通策略
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== 04 团购矩阵 ===== -->
+<div class="container" id="dm">
+<div class="section">
+  <div class="section-title"><span class="section-number">04</span>团购套餐矩阵</div>
+  <div class="section-desc">价格锚点+引流款+利润款，三层产品矩阵</div>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>套餐名称</th>
+        <th>价格</th>
+        <th>定位</th>
+        <th>核心菜品</th>
+        <th>上架时间</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>🍲 开业尝鲜 · 鱼蛙双人餐</strong></td>
+        <td>¥79</td>
+        <td><span style="color:#c0392b;font-weight:600;">🔥 引流爆款</span></td>
+        <td>招牌鱼蛙锅底+配菜+饮品2份</td>
+        <td>D-7上线</td>
+      </tr>
+      <tr>
+        <td><strong>🐸 鱼蛙狂欢 · 3-4人餐</strong></td>
+        <td>¥168</td>
+        <td><span style="color:#6B0E0E;font-weight:600;">主力款</span></td>
+        <td>大份鱼蛙锅+涮菜4份+小吃+主食</td>
+        <td>D-7上线</td>
+      </tr>
+      <tr>
+        <td><strong>👑 川渔郎豪华 · 4-6人餐</strong></td>
+        <td>¥298</td>
+        <td><span style="color:#CCAA44;font-weight:600;">利润款</span></td>
+        <td>鱼蛙锅+精品肥牛+9宫格荤素搭配+酒水</td>
+        <td>D+7上线</td>
+      </tr>
+      <tr>
+        <td><strong>💥 工作日午市 · 单人简餐</strong></td>
+        <td>¥29.9</td>
+        <td><span style="color:#c0392b;font-weight:600;">🔥 低谷引流</span></td>
+        <td>迷你鱼蛙锅+米饭1份</td>
+        <td>D+14上线</td>
+      </tr>
+      <tr>
+        <td><strong>🎂 生日特权 · 双人免单</strong></td>
+        <td>¥0</td>
+        <td><span style="color:#27ae60;font-weight:600;">🎉 口碑裂变</span></td>
+        <td>5位同行的寿星本人免单（需提前预约）</td>
+        <td>D+7上线</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="highlight-box">
+    <h3>🎯 团购策略核心</h3>
+    <p>
+      <strong>开业前30天</strong>：聚焦¥79双人餐冲销量 —— 新店期销量=排名权重，销量越高曝光越大<br>
+      <strong>后30天</strong>：逐步提高¥298豪华餐占比 —— 利润款拉升客单价<br>
+      <strong>长期</strong>：¥29.9午市单人餐填低谷时段 —— 保证闲时也有单量<br><br>
+      ⚠️ 注意：团购页面头图、菜品图、视频必须精美，直接影响转化率
+    </p>
+  </div>
+</div>
+</div>
+
+<!-- ===== 05 推广通 ===== -->
+<div class="container" id="promotion">
+<div class="section">
+  <div class="section-title"><span class="section-number">05</span>推广通投放策略</div>
+  <div class="section-desc">无基础评价时，推广通是唯一的"可信曝光"入口</div>
+
+  <div class="card-grid">
+    <div class="card">
+      <span class="label">📡 投放阶段</span>
+      <h3>第一阶段 &middot; 开业期</h3>
+      <p>
+        · 时间：D-3 ~ D+14（约17天）<br>
+        · 预算：¥200/天（总量¥3,400）<br>
+        · 策略：关键词全面覆盖"火锅""鱼火锅""牛蛙""塘沽美食"<br>
+        · 人群：新港3km + 塘沽核心区2km<br>
+        · 出价：高出价抢排名（前3位）<br>
+        · 素材：菜品大图+开业折扣信息
+      </p>
+    </div>
+    <div class="card">
+      <span class="label">📡 投放阶段</span>
+      <h3>第二阶段 &middot; 稳评期</h3>
+      <p>
+        · 时间：D+15 ~ D+30（约15天）<br>
+        · 预算：¥150/天（总量¥2,250）<br>
+        · 策略：转向精准人群，降低出价<br>
+        · 人群：近期搜索过火锅/川菜的用户<br>
+        · 素材：更新为带评价截图和星级的创意图
+      </p>
+    </div>
+    <div class="card">
+      <span class="label">📡 投放阶段</span>
+      <h3>第三阶段 &middot; 日常期</h3>
+      <p>
+        · 时间：D+31起<br>
+        · 预算：¥100/天（月均¥3,000）<br>
+        · 策略：维持曝光，精细化投放<br>
+        · 重点：周末加量，工作日减量<br>
+        · 测试：不同创意图的CTR，优化文案
+      </p>
+    </div>
+  </div>
+
+  <div class="highlight-box" style="margin-top:16px;">
+    <h3>⚠️ 推广通注意事项（新店版）</h3>
+    <p>
+      ① 没有评价基础时，推广通转化率会偏低 → 配合团购低价引流品提升转化<br>
+      ② 开业期不要省预算，这是"冷启动"必须付出的成本<br>
+      ③ 每3天检查一次数据：曝光量→点击率→团购下单率，持续优化素材<br>
+      ④ 建议绑定团购套餐为推广通推广落地页，直接引导下单
+    </p>
+  </div>
+</div>
+</div>
+
+<!-- ===== 06 私域沉淀 ===== -->
+<div class="container" id="private">
+<div class="section">
+  <div class="section-title"><span class="section-number">06</span>私域沉淀 · 把客人装进口袋</div>
+  <div class="section-desc">新店没有老客可以盘 — 那就从第一天开始建自己的私域池</div>
+
+  <div class="card-grid">
+    <div class="card">
+      <span class="label">📥 入群激励</span>
+      <h3>进群就送 · 桌桌必推</h3>
+      <p>
+        · 收银结束：服务员邀请扫码入群<br>
+        · 入群福利：每周抢"霸王餐"名额（每周2位）<br>
+        · 入群即送：下次到店88折券<br>
+        · 目标：首月入群人数≥500人
+      </p>
+    </div>
+    <div class="card">
+      <span class="label">📢 群运营内容</span>
+      <h3>周频触达 · 不打扰但有用</h3>
+      <p>
+        · 周一：【鱼蛙上新】本周新菜品预告<br>
+        · 周三：【限时抢购】限量10份¥49.9双人餐<br>
+        · 周五：【周末好食】周末到店加赠菜品<br>
+        · 周日：【霸王餐】本周开奖+下周预告
+      </p>
+    </div>
+    <div class="card">
+      <span class="label">💎 裂变玩法</span>
+      <h3>老带新 · 口碑裂变</h3>
+      <p>
+        · 老客带新客到店 → 双方各赠招牌菜1份<br>
+        · 转发开业海报到朋友圈 → 到店享88折<br>
+        · 大众点评写满100字+3图评价 → 返¥5红包<br>
+        · 抖音发布探店视频@门店 → 送58元菜品券
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== 07 会员体系 ===== -->
+<div class="container" id="members">
+<div class="section">
+  <div class="section-title"><span class="section-number">07</span>会员体系 · 从第一次到每一次</div>
+  <div class="section-desc">新店没有会员基础？从第一桌客人就开始建！</div>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>等级</th>
+        <th>门槛</th>
+        <th>权益</th>
+        <th>说明</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>🐟 鱼苗会员</strong></td>
+        <td>首次到店自动注册</td>
+        <td>入会礼包¥28菜品券</td>
+        <td>所有到店顾客默认注册</td>
+      </tr>
+      <tr>
+        <td><strong>🐠 小鱼会员</strong></td>
+        <td>累计消费3次</td>
+        <td>生日当天88折+送长寿面</td>
+        <td>推储值时锁定这批人</td>
+      </tr>
+      <tr>
+        <td><strong>🐟 大鱼会员</strong></td>
+        <td>累计消费8次 或 储值≥¥500</td>
+        <td>全单9折+每周限量抢购优先</td>
+        <td>核心复购人群</td>
+      </tr>
+      <tr>
+        <td><strong>👑 鱼王会员</strong></td>
+        <td>累计消费20次 或 储值≥¥2000</td>
+        <td>全单85折+新品免费尝鲜+生日宴免单（4人内）</td>
+        <td>超核心KOC</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="highlight-box" style="margin-top:20px;">
+    <h3>💰 储值方案</h3>
+    <p>
+      <strong>开业储值特惠（仅限首月）：</strong><br>
+      · 充¥200 → 送¥50（实际¥250）<br>
+      · 充¥500 → 送¥150（实际¥650）<br>
+      · 充¥1000 → 送¥400（实际¥1,400）<br><br>
+      <strong>策略逻辑：</strong>新店没有老客信任基础 → 储值需要高门槛优惠来刺激 → 首月储值目标是50人，沉淀资金¥2-3万
+    </p>
+  </div>
+</div>
+</div>
+
+<!-- ===== 08 预算分配 ===== -->
+<div class="container" id="budget">
+<div class="section">
+  <div class="section-title"><span class="section-number">08</span>预算分配 · 首月投入计划</div>
+  <div class="section-desc">新店启动需要一定的投入，以下是建议首月预算分配</div>
+
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>项目</th>
+        <th>预算（元）</th>
+        <th>占比</th>
+        <th>说明</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>推广通投放（开业期+稳评期）</td>
+        <td><strong>¥5,650</strong></td>
+        <td>38%</td>
+        <td>¥200/天×17天 + ¥150/天×15天</td>
+      </tr>
+      <tr>
+        <td>达人探店邀请</td>
+        <td><strong>¥4,000</strong></td>
+        <td>27%</td>
+        <td>10-15位达人·免单+差旅补助</td>
+      </tr>
+      <tr>
+        <td>团购平台抽佣&活动让利</td>
+        <td><strong>¥3,000</strong></td>
+        <td>20%</td>
+        <td>开业折扣成本(7.8折让利部分)</td>
+      </tr>
+      <tr>
+        <td>门店开业物料&地推</td>
+        <td><strong>¥1,500</strong></td>
+        <td>10%</td>
+        <td>传单、海报、桌贴、台卡、打卡牌</td>
+      </tr>
+      <tr>
+        <td>私域活动基金（霸王餐等）</td>
+        <td><strong>¥850</strong></td>
+        <td>5%</td>
+        <td>每周霸王餐成本+群福利</td>
+      </tr>
+      <tr style="background: var(--cream);font-weight:700;">
+        <td><strong>总计</strong></td>
+        <td><strong>¥15,000</strong></td>
+        <td><strong>100%</strong></td>
+        <td>⚠️ 可根据实际情况调整</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="highlight-box">
+    <h3>💡 预算建议</h3>
+    <p>
+      · 这是<strong>推荐预算框架</strong>，最低启动预算可压缩至¥8,000（砍掉达人探店，靠自然评价积累）<br>
+      · 如果老板预算充足：建议推广通再加到¥8,000/月，追求更快起量<br>
+      · 推广通是「花钱买时间」—— 预算越大，冷启动期越短<br>
+      · 开业第一个月不建议省推广通预算，这是新店唯一可控的流量来源
+    </p>
+  </div>
+</div>
+</div>
+
+<!-- ===== 09 KPI ===== -->
+<div class="container" id="kpi">
+<div class="section">
+  <div class="section-title"><span class="section-number">09</span>KPI目标 · 首月关键指标</div>
+  <div class="section-desc">没有数据就无从优化 —— 必须盯住这些数字</div>
+
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="num">500<span class="unit">+</span></div>
+      <div class="label">首月评价数</div>
+    </div>
+    <div class="kpi-card">
+      <div class="num">4.5<span class="unit">⭐</span></div>
+      <div class="label">首月星级目标</div>
+    </div>
+    <div class="kpi-card">
+      <div class="num">3,000<span class="unit">+单</span></div>
+      <div class="label">团购核销量</div>
+    </div>
+    <div class="kpi-card">
+      <div class="num">¥5<span class="unit">万+</span></div>
+      <div class="label">首月营收目标</div>
+    </div>
+    <div class="kpi-card">
+      <div class="num">500<span class="unit">人</span></div>
+      <div class="label">私域群人数</div>
+    </div>
+    <div class="kpi-card">
+      <div class="num">50<span class="unit">人</span></div>
+      <div class="label">首月储值会员</div>
+    </div>
+    <div class="kpi-card">
+      <div class="num">¥90<span class="unit">+</span></div>
+      <div class="label">目标客单价</div>
+    </div>
+    <div class="kpi-card">
+      <div class="num">20<span class="unit">%+</span></div>
+      <div class="label">复购率（次月）</div>
+    </div>
+  </div>
+
+  <div class="highlight-box" style="margin-top:20px;">
+    <h3>📊 每日盯盘数据</h3>
+    <p>
+      ① <strong>评价量</strong>：每天新增多少条评价？差评处理了吗？<br>
+      ② <strong>推广通ROI</strong>：曝光→点击→下单转化率是否健康<br>
+      ③ <strong>团购核销率</strong>：买券的人有没有来核销？<br>
+      ④ <strong>客单价</strong>：团购核销后的追加消费情况<br>
+      ⑤ <strong>入群人数</strong>：服务员有没有每桌都推？
+    </p>
+  </div>
+</div>
+</div>
+
+<!-- ===== 10 合规·话术 ===== -->
+<div class="container" id="qa">
+<div class="section">
+  <div class="section-title"><span class="section-number">10</span>合规红线 &middot; 话术指南</div>
+  <div class="section-desc">新店开业最容易踩的坑，提前规避</div>
+
+  <div class="card-grid">
+    <div class="card">
+      <span class="label">🚫 合规界限</span>
+      <h3>哪些话不能说？</h3>
+      <p>
+        ❌ 绝对禁止：<strong>"好评返现""给五星送菜"</strong><br>
+        ❌ 禁止：刷单、虚假交易、刷评价<br>
+        ❌ 禁止：诱导顾客写虚假好评<br>
+        ✅ 可以说：<strong>"收藏打卡到店送小吃"</strong><br>
+        ✅ 可以说：<strong>"欢迎在点评分享您的用餐体验"</strong>
+      </p>
+    </div>
+    <div class="card">
+      <span class="label">💬 差评应对</span>
+      <h3>差评处理SOP</h3>
+      <p>
+        · <strong>15分钟内回复</strong>：先道歉，再解释，后补救<br>
+        · 话术模板：<br>
+        "尊敬的顾客您好，非常抱歉给您带来了不好的用餐体验。<br>
+        关于您提到的【具体问题】，我们已经和后厨核实并将立即改进。<br>
+        希望能有机会再次为您服务，请通过XXX联系我们，我们将为您安排一次免费体验。<br>
+        川渔郎团队敬上"
+      </p>
+    </div>
+    <div class="card">
+      <span class="label">🗣️ 服务员话术</span>
+      <h3>结账必推话术</h3>
+      <p>
+        · 收藏打卡话术：<br>
+        "您好！店里新开业正在冲口碑，您方便收藏一下咱们店铺<br>
+        再拍两张照片写个评价吗？<br>
+        我送您一份【现炸酥肉/红糖冰粉/酸梅汤】<br>
+        不强制不强制，您方便的话帮我个忙~"
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ===== 11 总结 ===== -->
+<div class="container" id="summary">
+<div class="section" style="border-bottom:none;">
+  <div class="section-title"><span class="section-number">11</span>总结 · 新店出圈路线图</div>
+  <div class="section-desc">这张图就是你的新店作战地图</div>
+
+  <div class="highlight-box">
+    <h3>📋 执行优先级（按重要程度排序）</h3>
+    <p>
+      <strong>🔴 第一优先级（开业前必须完成）：</strong><br>
+      1. 美团/点评店铺装修（店招+头图+菜品图+环境图）<br>
+      2. 团购套餐上线（¥79双人餐先行）<br>
+      3. 门店物料全部到位（打卡牌、台卡、宣传单）<br><br>
+
+      <strong>🟠 第二优先级（开业后7天内）：</strong><br>
+      4. 推广通全面开启投放<br>
+      5. 达人探店安排上<br>
+      6. 收藏打卡活动启动，每天盯评价量<br><br>
+
+      <strong>🟢 第三优先级（开业后15-30天）：</strong><br>
+      7. 私域群启动运营<br>
+      8. 储值方案+会员体系上线<br>
+      9. 低谷时段活动推出<br>
+      10. 数据复盘，调整策略
+    </p>
+  </div>
+
+  <div class="card" style="text-align:center;padding:32px;">
+    <h3 style="font-size:24px;margin-bottom:12px;">川渔郎 · 新港二号路店 🐸🔥</h3>
+    <p style="font-size:16px;color:var(--text-light);">
+      全新店 · 无评价 · 无老客 → 靠产品+活动+投放，<br>
+      30天冲上4.5星，站稳新港商圈<br><br>
+      <strong style="color:var(--red);">第一波流量决定生死，开业必胜！</strong>
+    </p>
+  </div>
+</div>
+</div>
+
+<div class="footer">
+  本方案由 AI 助手生成 · 数据仅供参考 · 具体执行请根据门店实际情况调整<br>
+  川渔郎鱼蛙火锅（新港二号路店） · 2026年6月
+</div>
+
+</body>
+</html>
